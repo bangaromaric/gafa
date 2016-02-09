@@ -2,6 +2,6 @@
 echo "re";
 
 echo "hg";
-dfgdf
-dfdfgd?>
+// dfgdf
+// dfdfgd ?>
 
