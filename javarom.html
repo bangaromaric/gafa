@@ -1,0 +1,51 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="Author" content="Daniel Hagnoul" />
+	<title>Page type</title>
+	
+</head>
+<body>
+
+	
+	<script>
+var list = document.getElementById('listi');
+list.addEventListener('change', function() {
+// On affiche le contenu de l'élément <option> ciblé par la propriété selectedIndex
+alert(list.options[list.selectedIndex].innerHTML);
+
+}, true);
+</script>	
+	
+<select id="listi">
+<option>Selectionnez votre sexe</option>
+<option>Homme</option>
+<option>Femme</option>
+</select>
+
+
+
+
+
+
+
+
+
+<div>
+<select onchange="document.getElementById('affichage').innerHTML = document.getElementById(this.value).innerHTML;">
+<option value=""></option>
+<option value="i4-4-2">4-4-2</option>
+<option value="i4-4-3">4-4-3</option>
+<option id="test" value="i4-4-4" onclick="return cap('2');">4-4-4</option>
+</select>
+</div>
+<div id="affichage"></div>
+<div style="display:none" id="i4-4-2">Contenu de 4-4-2</div>
+<div style="display:none" id="i4-4-3">Contenu de 4-4-3</div>
+<div style="display:none" id="i4-4-4">Contenu de 4-4-4</div>
+
+
+</body>
+</html>
