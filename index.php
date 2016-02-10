@@ -4,6 +4,7 @@ session_start (); // Ouverture des sessions
 include ('connexion.php');
 
 ?>
+//jml
 // mode commit  xcv
 
 <?php
